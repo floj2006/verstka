@@ -6,7 +6,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #f5f5f5;
+  background: #fffdf0;
   color: #5d5b18;
   font-family: "Roboto Condensed", Arial, sans-serif;
   font-weight: 300;
@@ -37,16 +37,16 @@ button {
 }
 
 .site {
-  width: min(1170px, 100%);
-  min-height: 552px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
   background: #fffdf0;
 }
 
 .header {
   display: flex;
   align-items: center;
-  height: 34px;
+  height: 58px;
   background: #ffd735;
   overflow: hidden;
 }
@@ -55,11 +55,11 @@ button {
   display: flex;
   align-items: center;
   height: 100%;
-  flex: 0 0 147px;
-  padding-left: 36px;
+  flex: 0 0 235px;
+  padding-left: 72px;
   color: #fff;
   font-family: Arial, sans-serif;
-  font-size: 25px;
+  font-size: 39px;
   font-weight: 700;
   font-style: italic;
   line-height: 1;
@@ -69,7 +69,7 @@ button {
 .menu {
   display: flex;
   align-items: center;
-  gap: 21px;
+  gap: 26px;
   height: 100%;
   min-width: 0;
   overflow-x: auto;
@@ -84,20 +84,20 @@ button {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
-  gap: 6px;
+  gap: 10px;
   height: 100%;
   padding: 0;
   border: 0;
   background: transparent;
   color: #7c711d;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 300;
   line-height: 1;
   text-transform: uppercase;
 }
 
 .menu-icon {
-  font-size: 22px;
+  font-size: 34px;
 }
 
 .menu-link:hover,
@@ -110,35 +110,36 @@ button {
 }
 
 .page {
-  padding: 23px 11px 0;
+  padding: 30px 15px 0;
 }
 
 .top-panel {
-  min-height: 161px;
-  padding: 24px 28px 14px;
+  min-height: 267px;
+  padding: 39px 34px 23px;
   background: #fff;
 }
 
 h1 {
-  margin: 0 0 17px;
-  font-size: 20px;
+  margin: 0 0 27px 12px;
+  font-size: 29px;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .dates {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .date-box {
   display: flex;
   align-items: center;
-  height: 31px;
-  padding: 0 6px;
-  border: 1px solid #e8e4d7;
+  min-width: 218px;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #ece9dc;
   background: #fff;
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -148,8 +149,8 @@ h1 {
 }
 
 .date-box b {
-  margin-left: 4px;
-  color: #2a9ee5;
+  margin-left: 5px;
+  color: #289de4;
   font-weight: 300;
 }
 
@@ -163,49 +164,49 @@ h1 {
 }
 
 .file-type {
-  flex: 0 0 284px;
+  flex: 0 0 465px;
 }
 
 .file-path {
   flex: 1 1 auto;
-  margin-left: 18px;
+  margin-left: 30px;
 }
 
 .label {
   display: block;
-  margin: 0 0 6px 14px;
-  font-size: 14px;
+  margin: 0 0 6px 24px;
+  font-size: 21px;
   line-height: 1;
 }
 
 .select-box,
 .file-path input {
   width: 100%;
-  height: 31px;
-  border: 1px solid #e6e1d4;
-  border-radius: 3px;
+  height: 51px;
+  border: 1px solid #e8e4d5;
+  border-radius: 4px;
   background: #fff;
   color: #5d5b18;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 .select-box {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 0 35px 0 12px;
+  padding: 0 58px 0 23px;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
-  right: 12px;
-  font-size: 19px;
+  right: 29px;
+  font-size: 26px;
   transform: translateY(-50%);
 }
 
 .file-path input {
-  padding: 0 9px;
+  padding: 0 17px;
   outline: 0;
 }
 
@@ -213,9 +214,9 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 31px;
-  margin-left: 10px;
+  width: 34px;
+  height: 51px;
+  margin-left: 15px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -223,7 +224,7 @@ h1 {
 }
 
 .clip-btn span {
-  font-size: 24px;
+  font-size: 36px;
 }
 
 .clip-btn:hover {
@@ -231,14 +232,14 @@ h1 {
 }
 
 .start-btn {
-  width: 120px;
-  height: 31px;
-  margin-left: 10px;
+  width: 196px;
+  height: 51px;
+  margin-left: 8px;
   border: 0;
-  border-radius: 4px;
+  border-radius: 5px;
   background: #ffec71;
   color: #8c8128;
-  font-size: 14px;
+  font-size: 22px;
 }
 
 .start-btn:hover {
@@ -246,19 +247,19 @@ h1 {
 }
 
 .empty-line {
-  height: 30px;
+  height: 50px;
   background: #fff9ad;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1180px) {
   .header {
-    height: 42px;
+    height: 58px;
   }
 
   .logo {
-    flex-basis: 135px;
-    padding-left: 16px;
-    font-size: 23px;
+    flex-basis: 190px;
+    padding-left: 28px;
+    font-size: 32px;
   }
 
   .menu {
@@ -267,8 +268,8 @@ h1 {
 
   .form-line {
     display: grid;
-    grid-template-columns: 1fr 22px 120px;
-    gap: 12px 10px;
+    grid-template-columns: 1fr 34px 196px;
+    gap: 18px 14px;
   }
 
   .file-type,
@@ -284,13 +285,17 @@ h1 {
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 560px) {
   .page {
-    padding: 16px 10px 0;
+    padding: 20px 10px 0;
   }
 
   .top-panel {
-    padding: 22px 20px;
+    padding: 28px 20px 24px;
+  }
+
+  h1 {
+    margin-left: 0;
   }
 
   .dates,
@@ -300,6 +305,7 @@ h1 {
 
   .date-box {
     width: 100%;
+    min-width: 0;
   }
 
   .date-box + .date-box {
@@ -310,11 +316,11 @@ h1 {
   .form-field,
   .clip-btn,
   .start-btn {
-    margin-top: 14px;
+    margin-top: 18px;
   }
 
   .clip-btn {
-    width: 31px;
+    width: 51px;
   }
 
   .start-btn {
