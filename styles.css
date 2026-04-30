@@ -55,7 +55,7 @@ button {
   display: flex;
   align-items: center;
   height: 100%;
-  flex: 0 0 280px;
+  flex: 0 0 245px;
   padding-left: 72px;
   color: #fff;
   font-family: Arial, sans-serif;
@@ -69,9 +69,10 @@ button {
 .menu {
   display: flex;
   align-items: center;
-  gap: 26px;
+  gap: 28px;
   height: 100%;
   min-width: 0;
+  padding-left: 18px;
   overflow-x: auto;
   scrollbar-width: none;
 }
@@ -84,7 +85,7 @@ button {
   display: inline-flex;
   align-items: center;
   flex: 0 0 auto;
-  gap: 10px;
+  gap: 14px;
   height: 100%;
   padding: 0;
   border: 0;
@@ -97,7 +98,9 @@ button {
 }
 
 .menu-icon {
+  width: 38px;
   font-size: 34px;
+  text-align: center;
 }
 
 .menu-link:hover,
@@ -257,13 +260,13 @@ h1 {
   }
 
   .logo {
-    flex-basis: 190px;
+    flex-basis: 175px;
     padding-left: 28px;
     font-size: 32px;
   }
 
   .menu {
-    gap: 18px;
+    gap: 22px;
   }
 
   .form-line {
