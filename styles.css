@@ -56,7 +56,7 @@ button {
   align-items: center;
   height: 100%;
   flex: 0 0 261px;
-  padding-left: 72px;
+  padding-left: 59px;
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 39px;
@@ -98,9 +98,74 @@ button {
 }
 
 .menu-icon {
-  width: 38px;
-  font-size: 34px;
-  text-align: center;
+  position: relative;
+  display: inline-block;
+  flex: 0 0 var(--icon-width);
+  width: var(--icon-width);
+  height: 34px;
+}
+
+.menu-icon .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: var(--icon-size);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.12s ease;
+}
+
+.menu-icon .icon-hover {
+  font-size: var(--icon-hover-size, var(--icon-size));
+  opacity: 0;
+}
+
+.menu-link.has-hover-icon:hover .icon-base,
+.menu-link.has-hover-icon.active .icon-base {
+  opacity: 0;
+}
+
+.menu-link.has-hover-icon:hover .icon-hover,
+.menu-link.has-hover-icon.active .icon-hover {
+  opacity: 1;
+}
+
+.menu-link--managers {
+  --icon-width: 37.5px;
+  --icon-size: 34px;
+  --icon-hover-size: 40px;
+}
+
+.menu-link--resume {
+  --icon-width: 32px;
+  --icon-size: 34px;
+  --icon-hover-size: 34px;
+}
+
+.menu-link--companies {
+  --icon-width: 43px;
+  --icon-size: 34px;
+}
+
+.menu-link--import {
+  --icon-width: 35.5px;
+  --icon-size: 34px;
+}
+
+.menu-link--ads {
+  --icon-width: 29px;
+  --icon-size: 34px;
+}
+
+.menu-link--email {
+  --icon-width: 47px;
+  --icon-size: 34px;
+  --icon-hover-size: 34px;
+}
+
+.menu-link--settings {
+  --icon-width: 40px;
+  --icon-size: 34px;
+  --icon-hover-size: 34px;
 }
 
 .menu-link:hover,
