@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Импорт из XML файла</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&family=Roboto+Condensed:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <button class="menu-link" type="button">
+          <span class="material-symbols-outlined menu-icon">desktop_windows</span>
+          <span>Объявления</span>
+        </button>
+
+        <button class="menu-link" type="button">
+          <span class="material-symbols-outlined menu-icon">co_present</span>
+          <span>Объявления скомпонованные</span>
+        </button>
+
+        <button class="menu-link active" type="button">
+          <span class="material-symbols-outlined menu-icon">accessibility_new</span>
+          <span>Импорт из XML файла</span>
+        </button>
+
+        <button class="menu-link" type="button">
+          <span class="material-symbols-outlined menu-icon">public</span>
+          <span>Сообщества</span>
+        </button>
+
+        <button class="menu-link" type="button">
+          <span class="material-symbols-outlined menu-icon">person_add</span>
+          <span>Подписчики</span>
+        </button>
+
+        <button class="menu-link" type="button">
+          <span class="material-symbols-outlined menu-icon">emoji_people</span>
+          <span>Интерфейс</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section class="top-panel">
+        <h1>Импорт&nbsp; из xml/xlsx/dosx</h1>
+
+        <div class="dates">
+          <div class="date-box">
+            <span>Дата от</span>
+            <b>12.05.2023</b>
+          </div>
+          <div class="date-box">
+            <span>Дата до</span>
+            <b>12.05.2023</b>
+          </div>
+        </div>
+
+        <div class="form-line">
+          <label class="form-field file-type">
+            <span class="label">Укажите тип файла</span>
+            <span class="select-box">
+              <span>&nbsp;</span>
+              <span class="material-symbols-outlined arrow">expand_more</span>
+            </span>
+          </label>
+
+          <label class="form-field file-path">
+            <span class="label">Укажите путь к файлу</span>
+            <input type="text" />
+          </label>
+
+          <button class="clip-btn" type="button" aria-label="Прикрепить файл">
+            <span class="material-symbols-outlined">attach_file</span>
+          </button>
+
+          <button class="start-btn" type="button">Начать Импорт</button>
+        </div>
+      </section>
+
+      <div class="empty-line"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

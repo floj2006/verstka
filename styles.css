@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fffdf0;
+  color: #5c5a17;
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 300;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  display: inline-block;
+  font-family: "Material Symbols Outlined";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "liga";
+}
+
+.header {
+  height: 58px;
+  background: #ffd735;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  height: 100%;
+  max-width: 1784px;
+  margin: 0 auto;
+  padding: 0 14px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #666015;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.menu-link span:last-child {
+  position: relative;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.menu-icon {
+  font-size: 34px;
+}
+
+.menu-link:hover,
+.menu-link.active {
+  color: #f00000;
+}
+
+.menu-link.active {
+  font-weight: 400;
+}
+
+.page {
+  padding: 30px 15px 14px;
+}
+
+.top-panel {
+  min-height: 267px;
+  padding: 39px 34px 22px;
+  background: #fff;
+}
+
+h1 {
+  margin: 0 0 27px 12px;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.dates {
+  display: flex;
+  margin-bottom: 11px;
+}
+
+.date-box {
+  display: flex;
+  align-items: center;
+  min-width: 218px;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #ece9dc;
+  background: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.date-box + .date-box {
+  margin-left: -1px;
+}
+
+.date-box b {
+  margin-left: 5px;
+  color: #289de4;
+  font-weight: 300;
+}
+
+.form-line {
+  display: flex;
+  align-items: end;
+}
+
+.form-field {
+  display: block;
+}
+
+.file-type {
+  flex: 0 0 465px;
+}
+
+.file-path {
+  flex: 0 1 986px;
+  margin-left: 30px;
+}
+
+.label {
+  display: block;
+  margin: 0 0 6px 24px;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.select-box,
+.file-path input {
+  width: 100%;
+  height: 51px;
+  border: 1px solid #e8e4d5;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 24px;
+}
+
+.select-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 88px 0 23px;
+}
+
+.arrow {
+  position: absolute;
+  right: 29px;
+  top: 50%;
+  font-size: 26px;
+  transform: translateY(-50%);
+}
+
+.file-path input {
+  padding: 0 17px;
+  color: #5c5a17;
+  outline: 0;
+}
+
+.clip-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 51px;
+  margin-left: 15px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #7d7d7d;
+}
+
+.clip-btn span {
+  font-size: 36px;
+}
+
+.start-btn {
+  width: 196px;
+  height: 51px;
+  margin-left: 8px;
+  border: 0;
+  border-radius: 5px;
+  background: #ffec71;
+  color: #8c8128;
+  font-size: 22px;
+}
+
+.start-btn:hover {
+  background: #ffd800;
+}
+
+.empty-line {
+  height: 50px;
+  background: #fff9ad;
+}
+
+@media (max-width: 1180px) {
+  .form-line {
+    display: grid;
+    grid-template-columns: 1fr 34px 268px;
+    gap: 18px 14px;
+  }
+
+  .file-type,
+  .file-path {
+    grid-column: 1 / -1;
+    flex-basis: auto;
+    margin-left: 0;
+  }
+
+  .clip-btn,
+  .start-btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .page {
+    padding: 20px 10px 10px;
+  }
+
+  .top-panel {
+    padding: 28px 20px 24px;
+  }
+
+  h1 {
+    margin-left: 0;
+  }
+
+  .dates,
+  .form-line {
+    display: block;
+  }
+
+  .date-box {
+    min-width: 0;
+  }
+
+  .date-box + .date-box {
+    margin-top: -1px;
+    margin-left: 0;
+  }
+
+  .form-field,
+  .clip-btn,
+  .start-btn {
+    margin-top: 18px;
+  }
+
+  .clip-btn {
+    width: 51px;
+  }
+
+  .start-btn {
+    width: 100%;
+  }
+
+  .empty-line {
+    margin-top: 0;
+  }
+}
